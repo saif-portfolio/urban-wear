@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="URBAN WEAR — contemporary essentials, considered fits, and everyday confidence.">
+  <meta name="theme-color" content="#111111">
+  <title>URBAN WEAR — Modern Essentials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON DEMO ORDERS OVER $100 <span>·</span> NEW SEASON, NEW ENERGY</div>
+  <header class="site-header">
+    <div class="header-inner container">
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+      <a class="wordmark" href="#home" aria-label="Urban Wear home">URBAN<span>WEAR</span></a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#shop" data-filter-link="Men">MEN</a>
+        <a href="#shop" data-filter-link="Women">WOMEN</a>
+        <a href="#new">NEW ARRIVALS</a>
+        <a href="#story">OUR STORY</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="searchToggle" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+        <button class="icon-button bag-button" id="cartToggle" aria-label="Open shopping bag"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span class="bag-count" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <div class="search-panel" id="searchPanel" hidden><div class="container search-inner"><input id="searchInput" type="search" placeholder="Search your next favourite..." aria-label="Search products"><button id="clearSearch" class="text-button">CLEAR</button></div></div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=88" alt="Fashion models wearing contemporary streetwear">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow light">THE EVERYDAY EDIT · 2026</p>
+        <h1>Wear your<br><em>own</em> direction.</h1>
+        <p class="hero-copy">Modern essentials. Thoughtful details.<br>Made for wherever the day takes you.</p>
+        <a class="button button-light" href="#shop">EXPLORE THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-side-note">NEW SEASON / VOL. 01</div>
+      <div class="hero-bottom container"><span>DESIGNED FOR EVERY DAY</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="intro-strip container">
+      <p>STYLE IS PERSONAL.</p><p>QUALITY IS THE STANDARD.</p><p>MAKE IT YOURS.</p>
+    </section>
+
+    <section class="category-section section-pad" id="collections">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">CURATED FOR YOU</p><h2>Find your <em>uniform.</em></h2></div>
+          <p class="heading-note">Easy layers. Clean silhouettes.<br>Pieces that work together.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-men" href="#shop" data-category="Men">
+            <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=1000&q=85" alt="Men's contemporary outfit">
+            <span class="category-overlay"></span><span class="category-label"><small>01 / THE EDIT</small><strong>FOR HIM</strong><b>SHOP MEN ↗</b></span>
+          </a>
+          <a class="category-card category-women" href="#shop" data-category="Women">
+            <img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=1000&q=85" alt="Women's contemporary outfit">
+            <span class="category-overlay"></span><span class="category-label"><small>02 / THE EDIT</small><strong>FOR HER</strong><b>SHOP WOMEN ↗</b></span>
+          </a>
+          <a class="category-card category-accessories" href="#shop" data-category="Accessories">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1000&q=85" alt="Modern fashion collection">
+            <span class="category-overlay"></span><span class="category-label"><small>03 / FINISHING TOUCHES</small><strong>THE EXTRAS</strong><b>EXPLORE ↗</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section section-pad" id="shop">
+      <div class="container">
+        <div class="section-heading shop-heading">
+          <div><p class="eyebrow">THE CURRENT ROTATION</p><h2>Pieces to <em>live in.</em></h2></div>
+          <p class="heading-note">A considered selection of everyday<br>favourites and fresh arrivals.</p>
+        </div>
+        <div class="shop-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filter products">
+            <button class="filter-tab active" data-filter="All">ALL <span>12</span></button>
+            <button class="filter-tab" data-filter="Men">MEN</button>
+            <button class="filter-tab" data-filter="Women">WOMEN</button>
+            <button class="filter-tab" data-filter="Accessories">ACCESSORIES</button>
+          </div>
+          <div class="toolbar-right">
+            <select id="sortSelect" aria-label="Sort products"><option value="featured">SORT: FEATURED</option><option value="low">PRICE: LOW TO HIGH</option><option value="high">PRICE: HIGH TO LOW</option><option value="new">NEWEST FIRST</option></select>
+            <span id="resultCount" class="result-count">12 PRODUCTS</span>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden>No pieces found. Try another search or category.</div>
+      </div>
+    </section>
+
+    <section class="editorial section-pad" id="new">
+      <div class="container editorial-grid">
+        <div class="editorial-image-wrap"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=88" alt="Model wearing a modern layered outfit"><span class="image-index">EDITORIAL / 006</span></div>
+        <div class="editorial-copy"><p class="eyebrow">A LITTLE LESS, A LOT MORE</p><h2>Good style<br>doesn't need<br>to <em>shout.</em></h2><p>We believe the best wardrobe is built with pieces you reach for again and again. Versatile shapes, wearable tones and details that feel just right.</p><a class="underlined-link" href="#shop">DISCOVER THE EDIT <span>↗</span></a><div class="editorial-mark">UW<br><small>EST. FOR EVERY DAY</small></div></div>
+      </div>
+    </section>
+
+    <section class="values-section section-pad" id="story">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">THE URBAN WEAR POINT OF VIEW</p><h2>Less noise.<br><em>More intention.</em></h2></div><p class="heading-note">A fictional fashion-store concept<br>built around everyday expression.</p></div>
+        <div class="value-grid">
+          <article><span>01</span><h3>THOUGHTFUL DESIGN</h3><p>Clean lines and considered details that make getting dressed feel effortless.</p></article>
+          <article><span>02</span><h3>EVERYDAY COMFORT</h3><p>Relaxed silhouettes and easy combinations for the rhythm of real life.</p></article>
+          <article><span>03</span><h3>YOUR OWN STYLE</h3><p>No rules to follow. Just a collection to make your own, one outfit at a time.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container newsletter-inner"><div><p class="eyebrow light">THE GOOD NEWSLETTER</p><h2>A little style<br>in your inbox.</h2><p>New drops, styling notes and things worth opening.</p></div><form id="newsletterForm" class="newsletter-form"><label for="newsletterEmail">YOUR EMAIL ADDRESS</label><div><input id="newsletterEmail" type="email" placeholder="name@example.com" required><button type="submit" aria-label="Subscribe">JOIN ↗</button></div><small id="newsletterMessage">Demo form — no email will be stored or sent.</small></form></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="wordmark footer-wordmark" href="#home">URBAN<span>WEAR</span></a><p>Modern essentials for<br>your everyday rotation.</p></div>
+      <div class="footer-column"><h4>EXPLORE</h4><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#new">Editorial</a></div>
+      <div class="footer-column"><h4>ABOUT</h4><a href="#story">Our point of view</a><a href="#home">Back to top ↑</a></div>
+      <div class="footer-column"><h4>THE FINE PRINT</h4><p>This is a portfolio demo website. Products, prices and checkout are illustrative only.</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 URBAN WEAR — CONCEPT STORE</span><span>DESIGNED WITH INTENTION.</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>Your bag <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Close bag">✕</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>✳</span><h3>Your bag is taking a break.</h3><p>Find something that feels like you.</p><button class="button button-dark" id="continueShopping">CONTINUE SHOPPING</button></div>
+    <div class="cart-summary" id="cartSummary" hidden><div class="summary-line"><span>SUBTOTAL</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark full-button" id="demoCheckout">CHECKOUT <span>↗</span></button><small id="checkoutMessage">Demo only — no payment is processed.</small></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
